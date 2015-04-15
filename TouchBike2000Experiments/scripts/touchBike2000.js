@@ -1,22 +1,15 @@
 ﻿(function () {
 
     angular.module("touchBike2000", [])
-        .controller("MainCtrl", [function () {
-
-            console.log("hello seu trouxa");
+        .controller("MainCtrl", ["$scope", function ($scope) {
 
             var self = this;
 
-            model = {
-                "labels": {
-                    "formas-bascas":""
+            $scope.model = {
+                labels: {
+                    formasBascas: "Formas Bascas, versadas em forma de história de El Lissitzky"
                 }
             };
-
-            self.onHoverMenu = function (event) {
-                event.prevenDefault();
-                console.log("hover");
-            }
 
         }]);
 
