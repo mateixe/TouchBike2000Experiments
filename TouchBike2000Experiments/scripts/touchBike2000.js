@@ -20,6 +20,11 @@
                         over = false;
                         element.removeClass('bike-2000-opacity-on').addClass('bike-2000-opacity-off');
                     });
+
+                    element.on('swipeleft', function (event) {
+                        event.preventDefault();
+                        element.removeClass('bike-2000-opacity-on').addClass('bike-2000-opacity-all');
+                    });
                     
                 }
             }
@@ -34,6 +39,10 @@
                     formasBascas: "Formas Bascas, versadas em forma de história de El Lissitzky"
                 }
             };
+
+            $scope.hmSwipeleft = function () {
+                alert("fdsfsd");
+            }
 
         }]);
 
