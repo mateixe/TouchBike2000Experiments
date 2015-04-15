@@ -1,15 +1,13 @@
 ﻿body {
-    background-color:#968DA7;
+    background-color:#fff;
 }
 
 #formas-bascas{
   font-family: 'Rancho', 'serif';
   font-size: 40px;
-  width:200px;
-  height:50px;
 }
 
 #formas-bascas a{
-	color: #fff;
+	color: #e7399c;
 	text-decoration:none;
 }
