@@ -9,18 +9,16 @@
 
                 link: function (scope, element, attr) {
 
-                    var over = false;
-
                     element.on('mouseenter', function (event) {
                         event.preventDefault();
                         over = true;
-                        console.log(over);
+                        element.removeClass('bike-2000-opacity-off').addClass('bike-2000-opacity-on');
                     });
 
                     element.on('mouseleave', function (event) {
                         event.preventDefault();
                         over = false;
-                        console.log(over);
+                        element.removeClass('bike-2000-opacity-on').addClass('bike-2000-opacity-off');
                     });
                     
                 }
