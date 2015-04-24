@@ -6,11 +6,17 @@
   font-family: 'Rancho', 'serif';
   font-size: 40px;
   cursor:pointer;
+  transition: opacity 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 #formas-bascas h1{
 	color: #e7399c;
 	text-decoration:none;
+}
+
+#formas-bascas a:hover{
+    text-decoration:none;
 }
 
 .bike-2000-opacity-on{
