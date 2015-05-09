@@ -147,6 +147,10 @@
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="scripts\errors.json" />
     <Content Include="scripts\hammer.min.js" />
+    <Content Include="scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="scripts\jquery-2.1.3.js" />
+    <Content Include="scripts\jquery-2.1.3.min.js" />
+    <Content Include="scripts\jquery-2.1.3.min.map" />
     <Content Include="scripts\Polymer\context-free-parser\bower.json" />
     <Content Include="scripts\Polymer\context-free-parser\context-free-parser.html" />
     <Content Include="scripts\Polymer\context-free-parser\context-free-parser.js" />
@@ -950,6 +954,7 @@
     <Content Include="scripts\Polymer\webcomponentsjs\webcomponents-lite.min.js" />
     <Content Include="scripts\Polymer\webcomponentsjs\webcomponents.js" />
     <Content Include="scripts\Polymer\webcomponentsjs\webcomponents.min.js" />
+    <Content Include="scripts\reset.css" />
     <Content Include="scripts\touchBike2000.js" />
     <Content Include="scripts\version.json" />
     <Folder Include="images\" />

@@ -1,3 +1,14 @@
 ﻿body {
+    background-color:white;
+}
 
+#formas-bascas{
+    background-color:lightgray;
+    width:100%;
+    height:100vh;
+    min-height: 100%; /* Minimum height for modern browsers */
+    height:100%; /* Minimum height for IE */ 
+    width:100%;
+    position:absolute;
+    overflow:hidden;
 }

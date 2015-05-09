@@ -59,6 +59,23 @@
                 alert("fdsfsd");
             }
 
+        }])
+        .controller("FormasBascasCtrl", ["$scope",function ($scope) {
+
+            $scope.dizer = 'docce quero meu doce';
+
+            var container = document.getElementById("container");
+
+            var mc = new Hammer(container);
+
+            mc.on("panleft panright tap press", function (ev) {
+                //myElement.textContent = ev.type + " gesture detected.";
+                
+                $scope.$apply(function () {
+                    $scope['dizer'] = ev.type;
+                });
+            });
+
         }]);
 
 })();
