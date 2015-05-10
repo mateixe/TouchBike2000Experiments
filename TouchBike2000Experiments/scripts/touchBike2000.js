@@ -70,11 +70,30 @@
             var container = document.getElementById("container");
 
             var mc = new Hammer(container);
+            $scope.svg = Snap("#canvas");
+
+            $scope.circle = $scope.svg.circle(150, 150, 100);
 
             mc.on("panleft panright tap press", function (ev) {
-                //myElement.textContent = ev.type + " gesture detected.";
-                $scope.$apply(function () {
-                    $scope['dizer'] = ev.type;
+ 
+                $scope.ev = ev;
+
+                $scope.$apply(function (ev) {
+
+                    //console.log(ev.type);
+                   
+                    if (ev.type = "tap") {
+
+                        $scope.circle.attr({
+                            fill: "#bada55",
+                            stroke: "#555",
+                            strokeWidth: 20,
+                            cx: $scope.ev.deltaX,
+                            cy: $scope.ev.deltaY
+                        });
+
+                    }
+
                 });
             });
 

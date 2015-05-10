@@ -6,8 +6,6 @@
 
     <!-- TouchBike2000Experiments references -->
     <link href="../scripts/reset.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=outline">
     <link href="../css/formas-bascas.css" rel="stylesheet" />
 
@@ -16,7 +14,11 @@
 
     <div id="formas-bascas">
         <formas-bascas ng-controller="FormasBascasCtrl as ctrl">
-            {{dizer}}
+
+            <svg width="800" height="600" id="canvas">
+                <!--<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />-->
+            </svg>
+
         </formas-bascas>
     </div>
 
