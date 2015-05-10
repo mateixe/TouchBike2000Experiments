@@ -955,6 +955,7 @@
     <Content Include="scripts\Polymer\webcomponentsjs\webcomponents.js" />
     <Content Include="scripts\Polymer\webcomponentsjs\webcomponents.min.js" />
     <Content Include="scripts\reset.css" />
+    <Content Include="scripts\snap.svg.js" />
     <Content Include="scripts\touchBike2000.js" />
     <Content Include="scripts\version.json" />
     <Folder Include="images\" />

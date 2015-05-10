@@ -64,13 +64,15 @@
 
             $scope.dizer = 'docce quero meu doce';
 
+            $scope.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+            $scope.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
             var container = document.getElementById("container");
 
             var mc = new Hammer(container);
 
             mc.on("panleft panright tap press", function (ev) {
                 //myElement.textContent = ev.type + " gesture detected.";
-                
                 $scope.$apply(function () {
                     $scope['dizer'] = ev.type;
                 });
